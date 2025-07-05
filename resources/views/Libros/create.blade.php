@@ -1,10 +1,5 @@
 <h2>Registrar Libro</h2>
 
-<form method="POST" action="{{ route('cerrar-sesion') }}" style="display: inline;">
-    @csrf
-    <button type="submit">Cerrar Sesión</button>
-</form>
-
 <p><a href="{{ route('libros.listar') }}">Volver al listado</a></p>
 
 @if(session('error'))
